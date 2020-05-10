@@ -1,0 +1,78 @@
+.navbar navbar {
+    background-color: rgb(24, 93, 133);
+}
+
+.container-fluid {
+background-image: linear-gradient(rgb(24, 93, 133),rgb(233, 187, 61), rgb(24, 93, 133));
+width: 100vw;
+height: 100vh;
+background-position: center;
+position: absolute;
+}
+
+#header1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.material-icons {
+    color: rgb(233, 187, 61);
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  #start-cityList {
+    width: 350px;
+  }
+  
+  #city-date-icon,
+  #city-name,
+  #current-icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center/space-around/space-between;
+     
+  }
+  
+  h6 {
+    font-weight: bold;
+  }
+  
+  h5 {
+    font-weight: bold;
+      margin: 5px;
+  }
+  
+.card {
+    border-color: rgb(233, 187, 61);
+    border-width: 1px;
+    
+}
+ 
+  #forecast1,
+  #forecast2,
+  #forecast3,
+  #forecast4,
+  #forecast5 {
+    background-color: rgb(24, 93, 133);
+  }
+  
+  #forecast-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center/space-between;
+  }
+  
+  .forecast {
+      margin: 10px;
+      color: white;
+       
+  }
