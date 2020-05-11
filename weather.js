@@ -7,9 +7,9 @@ function savedCityList(citySearchList) {
         cityListHistory.addClass("list-group-item list-group-item-action");
 
         var Str = keys[i].toLowerCase().split(" ");
-        for (var i = 0; i < Str.length; i++) {
-            Str[i] =
-                Str[i].charAt(0).toUpperCase() + Str[i].substring(1);
+        for (var x = 0; x < Str.length; x++) {
+            Str[x] =
+                Str[x].charAt(0).toUpperCase() + Str[x].substring(1);
         }
         var titleCasedCity = Str.join(" ");
         cityListHistory.text(titleCasedCity);
@@ -20,11 +20,11 @@ function savedCityList(citySearchList) {
 
 function currentCityWeather(city, citySearchList) {
     savedCityList(citySearchList);
-
+    // current weather
     var queryURL =
         "https://api.openweathermap.org/data/2.5/weather?&units=imperial&appid=0a9ce3613f50f168aeadcb2242208a27&q=" +
         city;
-
+    //  5 day forcast
     var queryURL2 =
         "https://api.openweathermap.org/data/2.5/forecast?&units=imperial&appid=0a9ce3613f50f168aeadcb2242208a27&q=" +
         city;
@@ -139,13 +139,15 @@ function currentCityWeather(city, citySearchList) {
 }
 
 $(document).ready(function () {
+    var citySearchList;
     var citySearchListStr = localStorage.getItem("citySearchList");
-
-    var citySearchList = JSON.parse(citySearchListStr);
-
-    if (citySearchList == null) {
+    if (citySearchListStr) {
+        citySearchList = JSON.parse(citySearchListStr);
+        console.log('im looking here', citySearchList)
+    } else {
         citySearchList = {};
     }
+
 
     savedCityList(citySearchList);
     $("#current-weather").hide();
@@ -161,6 +163,9 @@ $(document).ready(function () {
             .toLowerCase();
 
         if (city != "") {
+            // example idea for refactor
+            // cityListArray.push(city)
+            // localStorage.setItem("citySearchList", cityListArray)
 
             citySearchList[city] = true;
             localStorage.setItem("citySearchList", JSON.stringify(citySearchList));

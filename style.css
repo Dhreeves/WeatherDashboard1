@@ -57,11 +57,11 @@ body {
     
 }
  
-  #forecast1,
-  #forecast2,
-  #forecast3,
-  #forecast4,
-  #forecast5 {
+  #forecastBack1,
+  #forecastBack2,
+  #forecastBack3,
+  #forecastBack4,
+  #forecastBack5 {
     background-color: rgb(24, 93, 133);
   }
   
