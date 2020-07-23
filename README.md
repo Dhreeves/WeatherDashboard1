@@ -25,3 +25,5 @@ weather.js
 Author: Diane Reeves
 
 https://dhreeves.github.io/WeatherDashboard1/
+
+<img width="1377" alt="Weather App" src="https://user-images.githubusercontent.com/34249881/88244362-36b1d080-cc59-11ea-80fd-c594ae6acfb0.png">
