@@ -1,7 +1,7 @@
 # WeatherDashboard1
 
 ## Project Description
-The Weather Dashboard is a website where customers can look up the weather within any major city in the world.
+The Weather Dashboard is a website where customers can look up the weather in any major city in the world.
 
 ## User Story
 As a customer
