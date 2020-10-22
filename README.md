@@ -10,7 +10,7 @@ so that I can see temperature, humidity, wind speed and UV index for the current
 When a city is named and submited, you will also see a 5-Day Forecast with tempuratue and Humidity.
 
 ## Tech/Framework used:
-HTML, CSS, JavaScript, JQuery, Google Font, Materialize, Bootstrap, Font Awesome
+HTML, CSS, JavaScript, JQuery, Google Font, Flexbox, Materialize, Bootstrap, Font Awesome
 
 ## API References
 OpenWeather API
